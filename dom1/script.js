@@ -446,12 +446,59 @@
 //     document.getElementById('todo-input').value = '';
 // }
 
-
-
-
+// -------------------------------------------------------------------------------------------------------------------------------
 
 
 // 	47.	Create a function that validates an email input field by adding/removing a class error based on the input value.
+
+// function validateEmail(input) {
+//     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     const errorMessage = document.getElementById("error-message");
+
+//     if (emailPattern.test(input.value)) {
+//         input.classList.remove("error");
+//         errorMessage.style.display = "none";
+//     } else {
+//         input.classList.add("error");
+//         errorMessage.style.display = "block";
+//     }
+// }
+
+// const emailInput = document.getElementById("email");
+
+// emailInput.addEventListener("input", function() {
+//     validateEmail(emailInput);
+// });
 // 	48.	Write code to create a modal popup by adding a new <div> with some content and a close button when a button is clicked.
+// function openModal() {
+//     const modal = document.createElement("div");
+//     modal.classList.add("modal");
+
+//     modal.innerHTML = `
+//         <div class="modal-content">
+//             <p>This is a dynamically created modal!</p>
+//             <button class="close-btn" onclick="closeModal(this)">Close</button>
+//         </div>
+//     `;
+
+//     document.body.appendChild(modal);
+// }
+
+// function closeModal(button) {
+//     button.parentElement.parentElement.remove();
+// }
 // 	49.	Build a function that changes the theme of a webpage (light/dark mode) by toggling classes on the <body> element.
+// function toggleTheme() {
+//     document.body.classList.toggle("dark-mode");
+// }
+
 // 	50.	Create a dropdown menu where clicking an item highlights it and logs its text to the console.
+// function toggleDropdown() {
+//     let menu = document.getElementById("menu");
+//     menu.style.display = menu.style.display === "block" ? "none" : "block";
+// }
+
+// function selectItem(item) {
+//     alert("Selected: " + item.textContent); // Shows selected item
+//     console.log("Selected:", item.textContent); // Logs text to console
+// }
